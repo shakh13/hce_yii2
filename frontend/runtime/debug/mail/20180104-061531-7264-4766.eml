@@ -1,0 +1,54 @@
+Message-ID: <a5ed19d3f0d4687ae7c6fe04b56ec729@hce.uz>
+Date: Thu, 04 Jan 2018 06:15:31 +0000
+Subject: Password reset for My Application
+From: My Application robot <support@example.com>
+To: vip.shaxi@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1515046531_e91008471c1368ce27b4c1f4efd089fb_=_"
+
+
+--_=_swift_1515046531_e91008471c1368ce27b4c1f4efd089fb_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello shakh,
+
+Follow the link below to reset your password:
+
+htt=
+p://hce.uz/site/reset-password?token=3D6VU4BZUgezaX9iXRvNTG0Hi42IF5QXhY_151=
+5046531
+
+--_=_swift_1515046531_e91008471c1368ce27b4c1f4efd089fb_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"password-reset">
+    <p>Hello shakh,</p>
+
+    <p>Fo=
+llow the link below to reset your password:</p>
+
+    <p><a href=3D"http=
+://hce.uz/site/reset-password?token=3D6VU4BZUgezaX9iXRvNTG0Hi42IF5QXhY_1515=
+046531">http://hce.uz/site/reset-password?token=3D6VU4BZUgezaX9iXRvNTG0Hi42=
+IF5QXhY_1515046531</a></p>
+</div>
+    </body>
+</html>
+
+
+--_=_swift_1515046531_e91008471c1368ce27b4c1f4efd089fb_=_--

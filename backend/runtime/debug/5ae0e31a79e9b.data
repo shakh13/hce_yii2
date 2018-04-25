@@ -1,0 +1,281 @@
+a:12:{s:6:"config";s:1431:"a:5:{s:10:"phpVersion";s:23:"7.0.28-0ubuntu0.16.04.1";s:10:"yiiVersion";s:10:"2.0.13-dev";s:11:"application";a:8:{s:3:"yii";s:10:"2.0.13-dev";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:8:"language";s:5:"en-US";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:23:"7.0.28-0ubuntu0.16.04.1";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:5:{s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.1.0.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:49:"/var/www/html/hce/vendor/yiisoft/yii2-swiftmailer";}}s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:47:"/var/www/html/hce/vendor/yiisoft/yii2-bootstrap";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:8:"2.0.12.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:43:"/var/www/html/hce/vendor/yiisoft/yii2-debug";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:41:"/var/www/html/hce/vendor/yiisoft/yii2-gii";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:43:"/var/www/html/hce/vendor/yiisoft/yii2-faker";}}}}";s:7:"request";s:2509:"a:14:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:6:{s:14:"content-length";s:2:"52";s:15:"accept-encoding";s:4:"gzip";s:10:"connection";s:10:"Keep-Alive";s:4:"host";s:13:"192.168.1.130";s:10:"user-agent";s:59:"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-A310F Build/NRD90M)";s:12:"content-type";s:48:"application/x-www-form-urlencoded; charset=UTF-8";}s:15:"responseHeaders";a:1:{s:12:"Content-Type";s:31:"application/json; charset=UTF-8";}s:5:"route";s:21:"api/cards/setmaincard";s:6:"action";s:68:"backend\modules\api\controllers\CardsController::actionSetmaincard()";s:12:"actionParams";a:0:{}s:11:"requestBody";a:3:{s:12:"Content Type";s:48:"application/x-www-form-urlencoded; charset=UTF-8";s:3:"Raw";s:52:"auth_key=RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri&card_id=1&";s:17:"Decoded to Params";a:2:{s:8:"auth_key";s:32:"RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri";s:7:"card_id";s:1:"1";}}s:6:"SERVER";a:32:{s:4:"USER";s:8:"www-data";s:4:"HOME";s:8:"/var/www";s:19:"HTTP_CONTENT_LENGTH";s:2:"52";s:20:"HTTP_ACCEPT_ENCODING";s:4:"gzip";s:15:"HTTP_CONNECTION";s:10:"Keep-Alive";s:9:"HTTP_HOST";s:13:"192.168.1.130";s:15:"HTTP_USER_AGENT";s:59:"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-A310F Build/NRD90M)";s:17:"HTTP_CONTENT_TYPE";s:48:"application/x-www-form-urlencoded; charset=UTF-8";s:15:"REDIRECT_STATUS";s:3:"200";s:11:"SERVER_NAME";s:1:"_";s:11:"SERVER_PORT";s:2:"80";s:11:"SERVER_ADDR";s:13:"192.168.1.130";s:11:"REMOTE_PORT";s:5:"50350";s:11:"REMOTE_ADDR";s:13:"192.168.1.131";s:15:"SERVER_SOFTWARE";s:12:"nginx/1.10.3";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:14:"REQUEST_SCHEME";s:4:"http";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:13:"DOCUMENT_ROOT";s:13:"/var/www/html";s:12:"DOCUMENT_URI";s:26:"/hce/backend/web/index.php";s:11:"REQUEST_URI";s:41:"/hce/backend/web/?r=api/cards/setmaincard";s:11:"SCRIPT_NAME";s:26:"/hce/backend/web/index.php";s:14:"CONTENT_LENGTH";s:2:"52";s:12:"CONTENT_TYPE";s:48:"application/x-www-form-urlencoded; charset=UTF-8";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:23:"r=api/cards/setmaincard";s:15:"SCRIPT_FILENAME";s:39:"/var/www/html/hce/backend/web/index.php";s:9:"PATH_INFO";s:0:"";s:9:"FCGI_ROLE";s:9:"RESPONDER";s:8:"PHP_SELF";s:26:"/hce/backend/web/index.php";s:18:"REQUEST_TIME_FLOAT";d:1524687642.497633;s:12:"REQUEST_TIME";i:1524687642;}s:3:"GET";a:1:{s:1:"r";s:21:"api/cards/setmaincard";}s:4:"POST";a:2:{s:8:"auth_key";s:32:"RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri";s:7:"card_id";s:1:"1";}s:6:"COOKIE";a:0:{}s:5:"FILES";a:0:{}s:7:"SESSION";a:0:{}}";s:3:"log";s:10476:"a:1:{s:8:"messages";a:26:{i:0;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1524687642.498693;i:4;a:0:{}i:5;i:858544;}i:1;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1524687642.498713;i:4;a:0:{}i:5;i:859920;}i:2;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1524687642.4992659;i:4;a:0:{}i:5;i:1104928;}i:3;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1524687642.499393;i:4;a:0:{}i:5;i:1116392;}i:4;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1524687642.499438;i:4;a:0:{}i:5;i:1121872;}i:6;a:6:{i:0;s:40:"Route requested: 'api/cards/setmaincard'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1524687642.4995229;i:4;a:0:{}i:5;i:1130328;}i:7;a:6:{i:0;s:19:"Loading module: api";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1524687642.4995351;i:4;a:0:{}i:5;i:1132560;}i:8;a:6:{i:0;s:35:"Route to run: api/cards/setmaincard";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1524687642.499716;i:4;a:0:{}i:5;i:1154080;}i:9;a:6:{i:0;s:84:"Running action: backend\modules\api\controllers\CardsController::actionSetmaincard()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1524687642.4997489;i:4;a:0:{}i:5;i:1157624;}i:10;a:6:{i:0;s:54:"Opening DB connection: mysql:host=localhost;dbname=hce";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1524687642.5002351;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1502064;}i:13;a:6:{i:0;s:72:"SELECT * FROM `user` WHERE `auth_key`='RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5006161;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1514584;}i:16;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5008211;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1536792;}i:19;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5014131;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1556976;}i:22;a:6:{i:0;s:55:"SELECT * FROM `cards` WHERE (`id`='1') AND (`status`=1)";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5018511;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1570464;}i:25;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `cards`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5019481;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1579776;}i:28;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'cards' AND kcu.table_name = 'cards'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5023561;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1595184;}i:31;a:6:{i:0;s:83:"SELECT * FROM `user_cards` WHERE (`user_id`=1) AND (`card_id`='1') AND (`status`=1)";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.502727;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1610776;}i:34;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `user_cards`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5029509;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1620312;}i:37;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_cards' AND kcu.table_name = 'user_cards'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5033419;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1633688;}i:40;a:6:{i:0;s:41:"SELECT * FROM `profile` WHERE `user_id`=1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.503787;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1649416;}i:43;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `profile`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.503885;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1659016;}i:46;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'profile' AND kcu.table_name = 'profile'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.504288;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1673536;}i:49;a:6:{i:0;s:79:"SELECT `profile`.`user_id` FROM `profile` WHERE (`profile`.`user_id`=1) LIMIT 2";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.505055;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1740464;}i:52;a:6:{i:0;s:57:"SELECT EXISTS(SELECT * FROM `user` WHERE (`user`.`id`=1))";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5053239;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1742872;}i:55;a:6:{i:0;s:52:"UPDATE `profile` SET `main_card`=1 WHERE `user_id`=1";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1524687642.5054669;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1806104;}i:58;a:6:{i:0;s:102:"Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.131";i:1;i:2;i:2;s:29:"yii\debug\Module::checkAccess";i:3;d:1524687642.5891261;i:4;a:0:{}i:5;i:1809504;}}}";s:9:"profiling";s:17717:"a:3:{s:6:"memory";i:1810832;s:4:"time";d:0.091832160949707031;s:8:"messages";a:32:{i:11;a:6:{i:0;s:54:"Opening DB connection: mysql:host=localhost;dbname=hce";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1524687642.5002639;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1503968;}i:12;a:6:{i:0;s:54:"Opening DB connection: mysql:host=localhost;dbname=hce";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1524687642.500592;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1516664;}i:14;a:6:{i:0;s:72:"SELECT * FROM `user` WHERE `auth_key`='RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.500639;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1516816;}i:15;a:6:{i:0;s:72:"SELECT * FROM `user` WHERE `auth_key`='RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5007041;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1520944;}i:17;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5008409;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1539424;}i:18;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.501261;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1552584;}i:20;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5014341;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1560032;}i:21;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.50172;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1562328;}i:23;a:6:{i:0;s:55:"SELECT * FROM `cards` WHERE (`id`='1') AND (`status`=1)";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5018671;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1571776;}i:24;a:6:{i:0;s:55:"SELECT * FROM `cards` WHERE (`id`='1') AND (`status`=1)";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.501919;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1575056;}i:26;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `cards`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5019629;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1581192;}i:27;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `cards`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.502254;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1594688;}i:29;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'cards' AND kcu.table_name = 'cards'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5023749;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1597600;}i:30;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'cards' AND kcu.table_name = 'cards'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5026031;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1600152;}i:32;a:6:{i:0;s:83:"SELECT * FROM `user_cards` WHERE (`user_id`=1) AND (`card_id`='1') AND (`status`=1)";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.502744;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1611888;}i:33;a:6:{i:0;s:83:"SELECT * FROM `user_cards` WHERE (`user_id`=1) AND (`card_id`='1') AND (`status`=1)";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.502918;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1615696;}i:35;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `user_cards`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5029669;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1621744;}i:36;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `user_cards`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5032539;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1630952;}i:38;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_cards' AND kcu.table_name = 'user_cards'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.50336;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1636104;}i:39;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_cards' AND kcu.table_name = 'user_cards'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.503593;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1639184;}i:41;a:6:{i:0;s:41:"SELECT * FROM `profile` WHERE `user_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.503804;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1650928;}i:42;a:6:{i:0;s:41:"SELECT * FROM `profile` WHERE `user_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.503855;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1654000;}i:44;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `profile`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.503901;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1660448;}i:45;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `profile`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.504195;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1671936;}i:47;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'profile' AND kcu.table_name = 'profile'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.504307;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1675952;}i:48;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'profile' AND kcu.table_name = 'profile'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5045719;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1678504;}i:50;a:6:{i:0;s:79:"SELECT `profile`.`user_id` FROM `profile` WHERE (`profile`.`user_id`=1) LIMIT 2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5050769;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1742056;}i:51;a:6:{i:0;s:79:"SELECT `profile`.`user_id` FROM `profile` WHERE (`profile`.`user_id`=1) LIMIT 2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5052071;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1744240;}i:53;a:6:{i:0;s:57:"SELECT EXISTS(SELECT * FROM `user` WHERE (`user`.`id`=1))";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5053589;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1744416;}i:54;a:6:{i:0;s:57:"SELECT EXISTS(SELECT * FROM `user` WHERE (`user`.`id`=1))";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5054059;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1745896;}i:56;a:6:{i:0;s:52:"UPDATE `profile` SET `main_card`=1 WHERE `user_id`=1";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1524687642.505482;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1807384;}i:57;a:6:{i:0;s:52:"UPDATE `profile` SET `main_card`=1 WHERE `user_id`=1";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1524687642.5888641;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1808768;}}}";s:2:"db";s:16549:"a:1:{s:8:"messages";a:30:{i:14;a:6:{i:0;s:72:"SELECT * FROM `user` WHERE `auth_key`='RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.500639;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1516816;}i:15;a:6:{i:0;s:72:"SELECT * FROM `user` WHERE `auth_key`='RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5007041;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1520944;}i:17;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5008409;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1539424;}i:18;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.501261;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1552584;}i:20;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5014341;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1560032;}i:21;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.50172;i:4;a:2:{i:0;a:5:{s:4:"file";s:40:"/var/www/html/hce/common/models/User.php";s:4:"line";i:211;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:29;s:8:"function";s:13:"findByAuthKey";s:5:"class";s:18:"common\models\User";s:4:"type";s:2:"::";}}i:5;i:1562328;}i:23;a:6:{i:0;s:55:"SELECT * FROM `cards` WHERE (`id`='1') AND (`status`=1)";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5018671;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1571776;}i:24;a:6:{i:0;s:55:"SELECT * FROM `cards` WHERE (`id`='1') AND (`status`=1)";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.501919;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1575056;}i:26;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `cards`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5019629;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1581192;}i:27;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `cards`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.502254;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1594688;}i:29;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'cards' AND kcu.table_name = 'cards'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5023749;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1597600;}i:30;a:6:{i:0;s:597:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'cards' AND kcu.table_name = 'cards'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5026031;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:30;s:8:"function";s:3:"one";s:5:"class";s:18:"yii\db\ActiveQuery";s:4:"type";s:2:"->";}}i:5;i:1600152;}i:32;a:6:{i:0;s:83:"SELECT * FROM `user_cards` WHERE (`user_id`=1) AND (`card_id`='1') AND (`status`=1)";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.502744;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1611888;}i:33;a:6:{i:0;s:83:"SELECT * FROM `user_cards` WHERE (`user_id`=1) AND (`card_id`='1') AND (`status`=1)";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.502918;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1615696;}i:35;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `user_cards`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5029669;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1621744;}i:36;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `user_cards`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5032539;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1630952;}i:38;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_cards' AND kcu.table_name = 'user_cards'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.50336;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1636104;}i:39;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_cards' AND kcu.table_name = 'user_cards'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.503593;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:32;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:1639184;}i:41;a:6:{i:0;s:41:"SELECT * FROM `profile` WHERE `user_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.503804;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1650928;}i:42;a:6:{i:0;s:41:"SELECT * FROM `profile` WHERE `user_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.503855;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1654000;}i:44;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `profile`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.503901;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1660448;}i:45;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `profile`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.504195;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1671936;}i:47;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'profile' AND kcu.table_name = 'profile'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.504307;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1675952;}i:48;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'profile' AND kcu.table_name = 'profile'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5045719;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:34;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1678504;}i:50;a:6:{i:0;s:79:"SELECT `profile`.`user_id` FROM `profile` WHERE (`profile`.`user_id`=1) LIMIT 2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5050769;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1742056;}i:51;a:6:{i:0;s:79:"SELECT `profile`.`user_id` FROM `profile` WHERE (`profile`.`user_id`=1) LIMIT 2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5052071;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1744240;}i:53;a:6:{i:0;s:57:"SELECT EXISTS(SELECT * FROM `user` WHERE (`user`.`id`=1))";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5053589;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1744416;}i:54;a:6:{i:0;s:57:"SELECT EXISTS(SELECT * FROM `user` WHERE (`user`.`id`=1))";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1524687642.5054059;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1745896;}i:56;a:6:{i:0;s:52:"UPDATE `profile` SET `main_card`=1 WHERE `user_id`=1";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1524687642.505482;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1807384;}i:57;a:6:{i:0;s:52:"UPDATE `profile` SET `main_card`=1 WHERE `user_id`=1";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1524687642.5888641;i:4;a:1:{i:0;a:5:{s:4:"file";s:69:"/var/www/html/hce/backend/modules/api/controllers/CardsController.php";s:4:"line";i:35;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:1808768;}}}";s:6:"assets";s:6:"a:0:{}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:93:"a:3:{s:5:"start";d:1524687642.4979529;s:3:"end";d:1524687642.5899849;s:6:"memory";i:1810832;}";s:4:"user";s:2:"N;";s:6:"router";s:204:"a:1:{s:8:"messages";a:1:{i:5;a:6:{i:0;s:56:"Pretty URL not enabled. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1524687642.49951;i:4;a:0:{}i:5;i:1130648;}}}";s:7:"summary";a:9:{s:3:"tag";s:13:"5ae0e31a79e9b";s:3:"url";s:61:"http://192.168.1.130/hce/backend/web/?r=api/cards/setmaincard";s:4:"ajax";i:0;s:6:"method";s:4:"POST";s:2:"ip";s:13:"192.168.1.131";s:4:"time";d:1524687642.497633;s:10:"statusCode";i:200;s:8:"sqlCount";i:15;s:9:"mailCount";i:0;}s:10:"exceptions";a:0:{}}
