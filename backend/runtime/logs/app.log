@@ -42194,3 +42194,491 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1524689081.8332
     'REQUEST_TIME' => 1524689081
 ]
+2018-04-26 12:33:46 [192.168.43.229][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.43.229
+2018-04-26 12:33:46 [192.168.43.229][-][-][info][application] $_GET = [
+    'r' => 'api/cards/getcards'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,uz;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/65.0.3325.181 Chrome/65.0.3325.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SAVE_DATA' => 'on'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '192.168.43.229'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.43.229'
+    'REMOTE_PORT' => '52304'
+    'REMOTE_ADDR' => '192.168.43.229'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/backend/web/index.php'
+    'REQUEST_URI' => '/hce/backend/web/?r=api/cards/getcards'
+    'SCRIPT_NAME' => '/hce/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=api/cards/getcards'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/backend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524746026.9222
+    'REQUEST_TIME' => 1524746026
+]
+2018-04-26 19:12:42 [192.168.1.131][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.131
+2018-04-26 19:12:41 [192.168.1.131][-][-][info][application] $_GET = [
+    'r' => 'api/cards/getmaincard'
+]
+
+$_POST = [
+    'auth_key' => 'RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CONTENT_LENGTH' => '42'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_HOST' => '192.168.1.130'
+    'HTTP_USER_AGENT' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; SM-A310F Build/NRD90M)'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.1.130'
+    'REMOTE_PORT' => '57964'
+    'REMOTE_ADDR' => '192.168.1.131'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/backend/web/index.php'
+    'REQUEST_URI' => '/hce/backend/web/?r=api/cards/getmaincard'
+    'SCRIPT_NAME' => '/hce/backend/web/index.php'
+    'CONTENT_LENGTH' => '42'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=api/cards/getmaincard'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/backend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524769961.889
+    'REQUEST_TIME' => 1524769961
+]
+2018-04-26 19:12:49 [192.168.1.131][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.131
+2018-04-26 19:12:48 [192.168.1.131][-][-][info][application] $_GET = [
+    'r' => 'api/cards/getcards'
+]
+
+$_POST = [
+    'auth_key' => 'RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CONTENT_LENGTH' => '42'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_HOST' => '192.168.1.130'
+    'HTTP_USER_AGENT' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; SM-A310F Build/NRD90M)'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.1.130'
+    'REMOTE_PORT' => '57964'
+    'REMOTE_ADDR' => '192.168.1.131'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/backend/web/index.php'
+    'REQUEST_URI' => '/hce/backend/web/?r=api/cards/getcards'
+    'SCRIPT_NAME' => '/hce/backend/web/index.php'
+    'CONTENT_LENGTH' => '42'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=api/cards/getcards'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/backend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524769968.5271
+    'REQUEST_TIME' => 1524769968
+]
+2018-04-26 19:34:33 [192.168.1.131][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.131
+2018-04-26 19:34:33 [192.168.1.131][-][-][info][application] $_GET = [
+    'r' => 'api/cards/getcards'
+]
+
+$_POST = [
+    'auth_key' => 'RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CONTENT_LENGTH' => '42'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_HOST' => '192.168.1.130'
+    'HTTP_USER_AGENT' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; SM-A310F Build/NRD90M)'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.1.130'
+    'REMOTE_PORT' => '58095'
+    'REMOTE_ADDR' => '192.168.1.131'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/backend/web/index.php'
+    'REQUEST_URI' => '/hce/backend/web/?r=api/cards/getcards'
+    'SCRIPT_NAME' => '/hce/backend/web/index.php'
+    'CONTENT_LENGTH' => '42'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=api/cards/getcards'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/backend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1524771273.5372
+    'REQUEST_TIME' => 1524771273
+]
+2018-04-29 11:18:26 [192.168.1.131][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.131
+2018-04-29 11:18:25 [192.168.1.131][-][-][info][application] $_GET = [
+    'r' => 'api/cards/getmaincard'
+]
+
+$_POST = [
+    'auth_key' => 'RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CONTENT_LENGTH' => '42'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_HOST' => '192.168.1.130'
+    'HTTP_USER_AGENT' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; SM-A310F Build/NRD90M)'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.1.130'
+    'REMOTE_PORT' => '40959'
+    'REMOTE_ADDR' => '192.168.1.131'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/backend/web/index.php'
+    'REQUEST_URI' => '/hce/backend/web/?r=api/cards/getmaincard'
+    'SCRIPT_NAME' => '/hce/backend/web/index.php'
+    'CONTENT_LENGTH' => '42'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=api/cards/getmaincard'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/backend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1525000705.7963
+    'REQUEST_TIME' => 1525000705
+]
+2018-04-29 11:55:44 [192.168.1.131][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.131
+2018-04-29 11:55:44 [192.168.1.131][-][-][info][application] $_GET = [
+    'r' => 'api/cards/getmaincard'
+]
+
+$_POST = [
+    'auth_key' => 'RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CONTENT_LENGTH' => '42'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_HOST' => '192.168.1.130'
+    'HTTP_USER_AGENT' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; SM-A310F Build/NRD90M)'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.1.130'
+    'REMOTE_PORT' => '41108'
+    'REMOTE_ADDR' => '192.168.1.131'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/backend/web/index.php'
+    'REQUEST_URI' => '/hce/backend/web/?r=api/cards/getmaincard'
+    'SCRIPT_NAME' => '/hce/backend/web/index.php'
+    'CONTENT_LENGTH' => '42'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=api/cards/getmaincard'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/backend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1525002944.2605
+    'REQUEST_TIME' => 1525002944
+]
+2018-04-29 12:49:41 [192.168.1.131][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.131
+2018-04-29 12:49:41 [192.168.1.131][-][-][info][application] $_GET = [
+    'r' => 'api/cards/getmaincard'
+]
+
+$_POST = [
+    'auth_key' => 'RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CONTENT_LENGTH' => '42'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_HOST' => '192.168.1.130'
+    'HTTP_USER_AGENT' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; SM-A310F Build/NRD90M)'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.1.130'
+    'REMOTE_PORT' => '41186'
+    'REMOTE_ADDR' => '192.168.1.131'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/backend/web/index.php'
+    'REQUEST_URI' => '/hce/backend/web/?r=api/cards/getmaincard'
+    'SCRIPT_NAME' => '/hce/backend/web/index.php'
+    'CONTENT_LENGTH' => '42'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=api/cards/getmaincard'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/backend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1525006181.2188
+    'REQUEST_TIME' => 1525006181
+]
+2018-05-07 13:49:10 [192.168.1.143][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.143
+2018-05-07 13:49:09 [192.168.1.143][1][-][info][application] $_GET = [
+    'r' => 'api/auth/login'
+]
+
+$_POST = [
+    'username' => 'shakh13'
+    'password' => 'shakh123'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CONTENT_LENGTH' => '35'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_HOST' => '192.168.1.130'
+    'HTTP_USER_AGENT' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; SM-A310F Build/NRD90M)'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.1.130'
+    'REMOTE_PORT' => '55153'
+    'REMOTE_ADDR' => '192.168.1.143'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/backend/web/index.php'
+    'REQUEST_URI' => '/hce/backend/web/?r=api/auth/login'
+    'SCRIPT_NAME' => '/hce/backend/web/index.php'
+    'CONTENT_LENGTH' => '35'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=api/auth/login'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/backend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1525700948.9147
+    'REQUEST_TIME' => 1525700948
+]
+2018-05-07 13:49:14 [192.168.1.143][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.143
+2018-05-07 13:49:14 [192.168.1.143][-][-][info][application] $_GET = [
+    'r' => 'api/cards/getmaincard'
+]
+
+$_POST = [
+    'auth_key' => 'RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CONTENT_LENGTH' => '42'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_HOST' => '192.168.1.130'
+    'HTTP_USER_AGENT' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; SM-A310F Build/NRD90M)'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.1.130'
+    'REMOTE_PORT' => '55153'
+    'REMOTE_ADDR' => '192.168.1.143'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/backend/web/index.php'
+    'REQUEST_URI' => '/hce/backend/web/?r=api/cards/getmaincard'
+    'SCRIPT_NAME' => '/hce/backend/web/index.php'
+    'CONTENT_LENGTH' => '42'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=api/cards/getmaincard'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/backend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1525700954.0834
+    'REQUEST_TIME' => 1525700954
+]
+2018-05-07 13:49:44 [192.168.1.143][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.143
+2018-05-07 13:49:44 [192.168.1.143][-][-][info][application] $_GET = [
+    'r' => 'api/cards/getmaincard'
+]
+
+$_POST = [
+    'auth_key' => 'RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CONTENT_LENGTH' => '42'
+    'HTTP_ACCEPT_ENCODING' => 'gzip'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_HOST' => '192.168.1.130'
+    'HTTP_USER_AGENT' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; SM-A310F Build/NRD90M)'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.1.130'
+    'REMOTE_PORT' => '55153'
+    'REMOTE_ADDR' => '192.168.1.143'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/backend/web/index.php'
+    'REQUEST_URI' => '/hce/backend/web/?r=api/cards/getmaincard'
+    'SCRIPT_NAME' => '/hce/backend/web/index.php'
+    'CONTENT_LENGTH' => '42'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=api/cards/getmaincard'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/backend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1525700984.487
+    'REQUEST_TIME' => 1525700984
+]
+2018-05-13 09:30:23 [192.168.1.153][-][l1uc0r538lkuho14g2kmqc9co1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/teminal/login". in /var/www/html/hce/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/hce/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('api/teminal/log...', Array)
+#1 /var/www/html/hce/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/hce/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/hce/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/hce/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/hce/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-05-13 09:30:23 [192.168.1.153][-][l1uc0r538lkuho14g2kmqc9co1][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.153
+    in /var/www/html/hce/backend/views/layouts/main.php:77
+2018-05-13 09:30:23 [192.168.1.153][-][l1uc0r538lkuho14g2kmqc9co1][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.153
+2018-05-13 09:30:23 [192.168.1.153][-][l1uc0r538lkuho14g2kmqc9co1][info][application] $_GET = [
+    'r' => 'api/teminal/login'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_HOST' => '192.168.1.130'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.1.130'
+    'REMOTE_PORT' => '49153'
+    'REMOTE_ADDR' => '192.168.1.153'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/backend/web/index.php'
+    'REQUEST_URI' => '/hce/backend/web/?r=api/teminal/login'
+    'SCRIPT_NAME' => '/hce/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=api/teminal/login'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/backend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526203823.7345
+    'REQUEST_TIME' => 1526203823
+]
