@@ -22,8 +22,8 @@ class TerminalController extends \yii\web\Controller
     public function actionLogin(){
         \Yii::$app->response->format = Response::FORMAT_JSON;
 
-        $authkey = Yii::$app->request->post("auth_key");
-        $exp_date = Yii::$app->request->post("exp_date");
+        $authkey = Yii::$app->request->get("auth_key");
+        $exp_date = Yii::$app->request->get("exp_date");
 
         if ($authkey && $exp_date){
             $terminal = Terminal::findOne(['auth_key' => $authkey, 'exp_date' => $exp_date, 'status' => 1]);

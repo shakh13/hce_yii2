@@ -9,8 +9,10 @@
 namespace backend\modules\api\controllers;
 
 
+use backend\modules\api\models\Trans;
 use backend\modules\api\models\UserCards;
 use common\models\Cards;
+use common\models\Terminal;
 use common\models\User;
 use Yii;
 use yii\web\Response;
@@ -212,5 +214,78 @@ class CardsController extends \yii\web\Controller
                 'content' => 'Вы не туда попали'
             ];
         }
+    }
+
+    public function actionTerminaltransaction(){
+        \Yii::$app->response->format = Response::FORMAT_JSON;
+
+        $auth_key = Yii::$app->request->get("auth_key");
+        $auth_key_user = Yii::$app->request->get("user_auth_key");
+        $uzs = Yii::$app->request->get("uzs");
+
+        if ($auth_key && $auth_key_user && $uzs){
+            $terminal = Terminal::findOne(['auth_key' => $auth_key, 'status' => 1]);
+            $user_card = UserCards::findOne(['public_key' => $auth_key_user, 'status' => 1]);
+            $card = Cards::findOne(['id' => $user_card->card_id, 'status' => true]);
+            if ($terminal && $user_card && $card){
+                $trans = new Trans();
+                $trans->user_id = $user_card->user_id;
+                $trans->card_id = $user_card->card_id;
+                $trans->terminal_id = $terminal->id;
+                $trans->uzs = $uzs;
+                if ($trans->save()){
+                    $card->cash = $card->cash - $uzs * 1;
+                    if ($card->save(false)){
+                        $terminal->cash += $uzs;
+                        if ($terminal->save()){
+                            return [
+                                'action' => 'terminaltransaction',
+                                'status' => true,
+                                'content' => 'OK'
+                            ];
+                        }
+                        else {
+                            $trans->delete();
+                            $card->cash += $uzs;
+                            $card->save();
+                            return [
+                               'action' => 'terminaltransaction',
+                               'status' => false,
+                               'content' => 'Terminal error'
+                            ];
+                        }
+                    }
+                    else {
+                        print_r($card->errors);
+                        $trans->delete();
+
+                        return [
+                            'action' => 'terminaltransaction',
+                            'status' => false,
+                            'content' => 'Card error'
+                        ];
+                    }
+                }
+                else {
+                    return [
+                       'action' => 'terminaltransaction',
+                       'status' => false,
+                       'content' => 'Transaction error. Please try again'
+                    ];
+                }
+            }
+            else
+                return [
+                    'action' => 'terminaltransaction',
+                    'status' => false,
+                    'content' => 'Terminal or user not found'
+                ];
+        }
+        else
+            return [
+               'action' => 'terminaltransaction',
+               'status' => true,
+               'content' => 'Terminal not found'
+            ];
     }
 }

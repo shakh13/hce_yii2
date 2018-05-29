@@ -13,6 +13,7 @@ use Yii;
  * @property string $number
  * @property string $exp_date
  * @property string $auth_key
+ * @property integer $cash
  * @property string $last_update
  * @property integer $status
  * @property string $created_at
@@ -38,7 +39,7 @@ class Terminal extends \yii\db\ActiveRecord
     {
         return [
             [['user_id', 'bank_id', 'number', 'exp_date', 'auth_key'], 'required'],
-            [['user_id', 'bank_id', 'status'], 'integer'],
+            [['user_id', 'bank_id', 'status', 'cash'], 'integer'],
             [['auth_key'], 'string', 'max' => 255],
             [['last_update', 'created_at'], 'safe'],
             [['number'], 'string', 'max' => 16],
