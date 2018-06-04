@@ -33,7 +33,7 @@ class Trans extends \yii\db\ActiveRecord
         return [
             [['user_id', 'card_id', 'terminal_id', 'uzs'], 'required'],
             [['user_id', 'card_id', 'terminal_id', 'uzs', 'status'], 'integer'],
-            [['created_at'], 'safe'],
+            [['created_at'], 'safe']
         ];
     }
 
