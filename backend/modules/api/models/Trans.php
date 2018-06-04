@@ -49,7 +49,8 @@ class Trans extends \yii\db\ActiveRecord
             'terminal_id' => 'Terminal ID',
             'status' => 'Status',
             'created_at' => 'Created At',
-            'ok'=>'ok'
         ];
     }
+
+
 }

@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use backend\modules\api\models\Trans;
 use Yii;
 
 /**
@@ -20,7 +21,7 @@ use Yii;
  *
  * @property User $user
  * @property Banks $bank
- * @property Transactions[] $transactions
+ * @property Trans[] $transactions
  */
 class Terminal extends \yii\db\ActiveRecord
 {
@@ -89,6 +90,6 @@ class Terminal extends \yii\db\ActiveRecord
      */
     public function getTransactions()
     {
-        return $this->hasMany(Transactions::className(), ['terminal_id' => 'id']);
+        return $this->hasMany(Trans::className(), ['terminal_id' => 'id']);
     }
 }
