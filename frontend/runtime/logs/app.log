@@ -2500,3 +2500,69 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1516179322.5045
     'REQUEST_TIME' => 1516179322
 ]
+2018-06-04 06:43:27 [::1][-][jov6v9bd23at1mm8356jof70a4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/cards/terminaltransaction". in /var/www/html/hce/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/html/hce/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('api/cards/termi...', Array)
+#1 /var/www/html/hce/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/hce/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/hce/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/hce/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/hce/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-06-04 06:43:27 [::1][-][jov6v9bd23at1mm8356jof70a4][info][application] $_GET = [
+    'r' => 'api/cards/terminaltransaction'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '2d5e138029a79dbc8ae3d54f2570130c37c49c3a53255531ce2110e280d24c2fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9zS7PPumOFZaLB5_0PjqFuNNYHnG5TmK\";}'
+    'advanced-frontend' => 'jov6v9bd23at1mm8356jof70a4'
+    '_identity-frontend' => 'dd51890bd5bcd6371deeab5b4cdd0e1ed05a09387e2bff84de538602b5e4f66da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[1,\"_VbJ893YeajLfQkCQW2bgBHfD_dYD_DM\",2592000]\";}'
+    'advanced-backend' => '66c86s3n19glve3975ojhi5vl6'
+    '_identity-backend' => 'e1a278b77eefac49eda00d1cadd6a28b9ed7f3daad3da88d1572dc1f6c2fffb4a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri\",2592000]\";}'
+    '_csrf-frontend' => 'e1cb0ee5c7fd07e1dcc502916b5c496dfb47a7faea97aa74f5e100a4a35c65a9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"jGOJFtYpaBMnZNzYLHNl8ANfxOHzYCi2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'HTTP_COOKIE' => '_csrf-backend=2d5e138029a79dbc8ae3d54f2570130c37c49c3a53255531ce2110e280d24c2fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229zS7PPumOFZaLB5_0PjqFuNNYHnG5TmK%22%3B%7D; advanced-frontend=jov6v9bd23at1mm8356jof70a4; _identity-frontend=dd51890bd5bcd6371deeab5b4cdd0e1ed05a09387e2bff84de538602b5e4f66da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22_VbJ893YeajLfQkCQW2bgBHfD_dYD_DM%22%2C2592000%5D%22%3B%7D; advanced-backend=66c86s3n19glve3975ojhi5vl6; _identity-backend=e1a278b77eefac49eda00d1cadd6a28b9ed7f3daad3da88d1572dc1f6c2fffb4a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RU-ZgsCg9fCFPEEaAb2s1F7v685F_3Ri%22%2C2592000%5D%22%3B%7D; _csrf-frontend=e1cb0ee5c7fd07e1dcc502916b5c496dfb47a7faea97aa74f5e100a4a35c65a9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22jGOJFtYpaBMnZNzYLHNl8ANfxOHzYCi2%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,uz;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => '_'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'REMOTE_PORT' => '46520'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_SOFTWARE' => 'nginx/1.14.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/hce/frontend/web/index.php'
+    'REQUEST_URI' => '/hce/frontend/web/?r=api/cards/terminaltransaction'
+    'SCRIPT_NAME' => '/hce/frontend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=api/cards/terminaltransaction'
+    'SCRIPT_FILENAME' => '/var/www/html/hce/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/hce/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1528094607.1993
+    'REQUEST_TIME' => 1528094607
+]

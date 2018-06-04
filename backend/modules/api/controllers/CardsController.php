@@ -304,7 +304,7 @@ class CardsController extends \yii\web\Controller
         else
             return [
                'action' => 'terminaltransaction',
-               'status' => true,
+               'status' => false,
                'content' => 'Terminal not found'
             ];
     }
