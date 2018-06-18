@@ -74,4 +74,8 @@ class Profile extends \yii\db\ActiveRecord
     public function getCard(){
         return UserCards::findOne(['user_id' => $this->user->id, 'card_id' => $this->main_card, 'status' => 1]);
     }
+
+    public function getFullname(){
+        return $this->name.' '.$this->surname.' '.$this->lastname;
+    }
 }

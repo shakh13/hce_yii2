@@ -12,6 +12,7 @@ use yii\web\Response;
  * @property integer $bank_id
  * @property string $number
  * @property string $exp_date
+ * @property string $password
  * @property integer $phone
  * @property string $name
  * @property integer $color

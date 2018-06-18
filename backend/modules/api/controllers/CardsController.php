@@ -177,8 +177,8 @@ class CardsController extends \yii\web\Controller
                 $i = 0;
                 foreach ($user->cards as $card){
 
-                    $card->public_key = sha1('Shakh'.$card->card_id.$card->card->exp_date.time());
-                    $card->save();
+                    //$card->public_key = sha1('Shakh'.$card->card_id.$card->card->exp_date.time());
+                    //$card->save();
                     $a[$i] = [
                         'id' => $card->card->id,
                         'bank_id' => $card->card->bank_id,
@@ -231,51 +231,63 @@ class CardsController extends \yii\web\Controller
                     $card = Cards::findOne(['id' => $user_card->card_id, 'status' => 1]);
 
                     if ($card){
-                        $trans = new Trans();
-                        $trans->user_id = $user_card->user_id;
-                        $trans->card_id = $user_card->card_id;
-                        $trans->terminal_id = $terminal->id;
-                        $trans->uzs = $uzs;
-                        if ($trans->save()){
-                            $card->cash = $card->cash - $uzs * 1;
-                            if ($card->save(false)){
-                                $terminal->cash += $uzs;
-                                if ($terminal->save()){
-                                    return [
-                                        'action' => 'terminaltransaction',
-                                        'status' => true,
-                                        'content' => 'OK'
-                                    ];
+
+                        if ($card->cash >= $uzs){
+                            $trans = new Trans();
+                            $trans->user_id = $user_card->user_id;
+                            $trans->card_id = $user_card->card_id;
+                            $trans->terminal_id = $terminal->id;
+                            $trans->uzs = $uzs;
+                            if ($trans->save()){
+                                $card->cash = $card->cash - $uzs;
+                                if ($card->save(false)){
+                                    $terminal->cash += $uzs;
+                                    if ($terminal->save()){
+                                        return [
+                                            'action' => 'terminaltransaction',
+                                            'status' => true,
+                                            'content' => 'OK'
+                                        ];
+                                    }
+                                    else {
+                                        $trans->delete();
+                                        $card->cash += $uzs;
+                                        $card->save();
+                                        return [
+                                            'action' => 'terminaltransaction',
+                                            'status' => false,
+                                            'content' => 'Terminal error'
+                                        ];
+                                    }
                                 }
                                 else {
+                                    print_r($card->errors);
                                     $trans->delete();
-                                    $card->cash += $uzs;
-                                    $card->save();
+
                                     return [
                                         'action' => 'terminaltransaction',
                                         'status' => false,
-                                        'content' => 'Terminal error'
+                                        'content' => 'Card error'
                                     ];
                                 }
                             }
                             else {
-                                print_r($card->errors);
-                                $trans->delete();
-
                                 return [
                                     'action' => 'terminaltransaction',
                                     'status' => false,
-                                    'content' => 'Card error'
+                                    'content' => 'Transaction error. Please try again'
                                 ];
                             }
                         }
                         else {
                             return [
-                                'action' => 'terminaltransaction',
-                                'status' => false,
-                                'content' => 'Transaction error. Please try again'
+                               'action' => 'terminaltransaction',
+                               'status' => false,
+                               'content' => 'Not enough cash'
                             ];
                         }
+
+
                     }
                     else {
                         return [
@@ -307,5 +319,133 @@ class CardsController extends \yii\web\Controller
                'status' => false,
                'content' => 'Terminal not found'
             ];
+    }
+
+    public function actionGethistory(){
+        \Yii::$app->response->format = Response::FORMAT_JSON;
+
+        $auth_key = Yii::$app->request->post("auth_key");
+
+        if (strlen($auth_key) > 10){
+            $user = User::findByAuthKey($auth_key);
+            if ($user){
+                $histories = Trans::find()->where(['user_id' => $user->id, 'status' => 1])->orderBy(['created_at' => SORT_DESC])->all();
+                $a = [];
+                $i= 0;
+                foreach ($histories as $history){
+                    $a[$i] = [
+                        'id' => $history->id,
+                        'user_id' => $history->user_id,
+                        'card_id' => $history->card_id,
+                        'terminal_id' => $history->terminal_id,
+                        'uzs' => $history->uzs,
+                        'created_at' => $history->created_at,
+                        'username' => $history->user->profile->fullname,
+                        'card_number' => $history->card->number,
+                        'terminal_name' => $history->terminal->user->profile->fullname
+                    ];
+                    $i++;
+                }
+
+                return [
+                    'action' => 'gethistory',
+                    'status' => true,
+                    'content' => $a
+                ];
+
+            }
+            else {
+                return [
+                   'action' => 'gethistory',
+                   'status' => false,
+                    'content' => 'User not found'
+                ];
+            }
+        }
+        else {
+            return [
+               'action' => 'gethistory',
+               'status' => false,
+               'content' => 'You\'re not logged in'
+            ];
+        }
+
+    }
+    
+    public function actionRemove(){
+        \Yii::$app->response->format = Response::FORMAT_JSON;
+
+        $auth_key = Yii::$app->request->post('auth_key');
+        $card_id = Yii::$app->request->post('card_id');
+
+        if (strlen($auth_key) > 10 && strlen($card_id)>0) {
+            $user = User::findByAuthKey($auth_key);
+            if ($user) {
+                $card = Cards::findOne(['id' => $card_id, 'status' => 1]);
+                if ($card){
+                    $user_card = UserCards::findOne(['user_id' => $user->id, 'card_id' => $card->id]);
+                    if ($user_card){
+                        $user_card->status = 0;
+                        if ($user_card->save()){
+                            return [
+                               'action' => 'remove',
+                               'status' => true,
+                               'content' => 'OK'
+                            ];
+                        }
+                        else {
+                            return [
+                                'action' => 'remove',
+                                'status' => false,
+                                'content' => 'Something went wrong. Please try again later'
+                            ];
+                        }
+                    }
+                    else {
+                        return [
+                            'action' => 'remove',
+                            'status' => false,
+                            'content' => 'This is not your card'
+                        ];
+                    }
+                }
+                else {
+                    return [
+                        'action' => 'remove',
+                        'status' => false,
+                        'content' => 'Card not found'
+                    ];
+                }
+            }
+            else {
+                return [
+                   'action' => 'remove',
+                   'status' => false,
+                   'content' => 'User not found'
+                ];
+            }
+        }
+        else {
+            return [
+               'action' => 'remove',
+               'status' => false,
+               'content' => 'You\'re not logged in. Please, login to contunue'
+            ];
+        }
+    }
+
+    public function actionAdd(){
+        \Yii::$app->response->format = Response::FORMAT_JSON;
+
+        $auth_key = Yii::$app->request->post("auth_key");
+        $card_number = Yii::$app->request->post("card_number");
+        $exp_date = Yii::$app->request->post("exp_date");
+
+        // ----------------------------------------
+        return [
+           'action' => 'add',
+           'status' => true,
+           'content' => 1313
+        ];
     }
 }

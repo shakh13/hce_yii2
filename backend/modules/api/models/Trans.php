@@ -2,6 +2,9 @@
 
 namespace backend\modules\api\models;
 
+use common\models\Cards;
+use common\models\Terminal;
+use common\models\User;
 use Yii;
 
 /**
@@ -33,7 +36,7 @@ class Trans extends \yii\db\ActiveRecord
         return [
             [['user_id', 'card_id', 'terminal_id', 'uzs'], 'required'],
             [['user_id', 'card_id', 'terminal_id', 'uzs', 'status'], 'integer'],
-            [['created_at'], 'safe']
+            [['created_at'], 'safe'],
         ];
     }
 
@@ -52,5 +55,15 @@ class Trans extends \yii\db\ActiveRecord
         ];
     }
 
+    public function getUser(){
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
+    }
 
+    public function getCard(){
+        return $this->hasOne(Cards::className(), ['id' => 'card_id']);
+    }
+
+    public function getTerminal(){
+        return $this->hasOne(Terminal::className(), ['id' => 'terminal_id']);
+    }
 }
