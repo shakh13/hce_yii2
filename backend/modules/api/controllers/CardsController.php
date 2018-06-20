@@ -429,7 +429,7 @@ class CardsController extends \yii\web\Controller
             return [
                'action' => 'remove',
                'status' => false,
-               'content' => 'You\'re not logged in. Please, login to contunue'
+               'content' => 'You\'re not logged in. Please, login to continue'
             ];
         }
     }
@@ -441,11 +441,91 @@ class CardsController extends \yii\web\Controller
         $card_number = Yii::$app->request->post("card_number");
         $exp_date = Yii::$app->request->post("exp_date");
 
-        // ----------------------------------------
-        return [
-           'action' => 'add',
-           'status' => true,
-           'content' => 1313
-        ];
+        $user = User::findByAuthKey($auth_key);
+        if ($user){
+            $card = Cards::findOne(['number' => $card_number, 'exp_date' => $exp_date, 'status' => 1]);
+            if ($card){
+                $rand_num = rand(1000, 9999);
+                $user_card = new UserCards();
+                $user_card->user_id = $user->id;
+                $user_card->card_id = $card->id;
+                $user_card->public_key = sha1($user->id.$card->id.time()."Shakh");
+                $user_card->status = 0;
+                $user_card->smstouser = $rand_num;
+                if ($user_card->save()){
+                    return [
+                       'action' => 'add',
+                       'status' => true,
+                       'content' => $rand_num
+                    ];
+                }
+                else {
+                    return [
+                       'action' => 'add',
+                       'status' => false,
+                       'content' => 'Cannot add card. Please, try again later'
+                    ];
+                }
+
+            }
+            else {
+                return [
+                    'action' => 'add',
+                    'status' => false,
+                    'content' => 'Card not found'
+                ];
+            }
+        }
+        else {
+            return [
+               'action' => 'add',
+               'status' => false,
+               'content' => 'User not found'
+            ];
+        }
+    }
+
+    public function actionVerifyadd(){
+        \Yii::$app->response->format = Response::FORMAT_JSON;
+
+        $auth_key = Yii::$app->request->post("auth_key");
+        $code = Yii::$app->request->post("code");
+
+        $user = User::findByAuthKey($auth_key);
+        if ($user){
+            $user_card = UserCards::findOne(['user_id' => $user->id, 'smstouser' => $code, 'status' => 0]);
+            if ($user_card){
+                $user_card->status = 1;
+                if ($user_card->save()){
+                    return [
+                       'action' => 'verifyadd',
+                       'status' => true,
+                       'content' => 'OK'
+                    ];
+                }
+                else {
+                    return [
+                        'action' => 'verifyadd',
+                        'status' => false,
+                        'content' => 'Sorry, error while activating card. Please try again later'
+                    ];
+                }
+            }
+            else {
+                return [
+                   'action' => 'virifyadd',
+                   'status' => false,
+                   'content' => 'Sorry, there is something wrong. Please, try again later'
+                ];
+            }
+        }
+        else {
+            return [
+                'action' => 'verifyadd',
+                'status' => false,
+                'content' => 'User not found'
+            ];
+        }
+
     }
 }
