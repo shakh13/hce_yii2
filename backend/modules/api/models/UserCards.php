@@ -61,7 +61,7 @@ class UserCards extends \yii\db\ActiveRecord
     }
 
     public function getCard(){
-        return Cards::find()->where(['id' => $this->id, 'status' => 1])->one();
+        return Cards::find()->where(['id' => $this->card_id, 'status' => 1])->one();
         //return $this->hasOne(Cards::className(), ['id' => 'card_id']);
     }
 }

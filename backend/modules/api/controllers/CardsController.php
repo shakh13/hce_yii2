@@ -43,11 +43,11 @@ class CardsController extends \yii\web\Controller
 
         if ($authkey && $cardid && strlen($authkey) > 0 && strlen($cardid) > 0){
             $user = User::findByAuthKey($authkey);
-            $card = Cards::find()->where(['id' => $cardid, 'status' => 1])->one();
+            $usercard = UserCards::findOne(['user_id' => $user->id, 'id' => $cardid, 'status' => 1]);
             if ($user && $cardid){
-                $usercard = UserCards::findOne(['user_id' => $user->id, 'card_id' => $cardid, 'status' => 1]);
-                if ($usercard){
-                    $user->profile->main_card = $card->id;
+
+                if ($usercard->card){
+                    $user->profile->main_card = $cardid;
                     if ($user->profile->save()){
                         return [
                            'action' => 'setmaincard',
@@ -90,8 +90,11 @@ class CardsController extends \yii\web\Controller
             $user = User::findByAuthKey($authkey);
             if ($user){
 
-                if ($user->profile->card){
-                    $card = $user->profile->card;
+                $maincard = UserCards::findOne(['id' => $user->profile->main_card, 'status' => 1]);
+
+                if ($maincard->card){
+
+                    $card = $maincard;
                     //generate key for card -----------------------------
 
                     $card->public_key = sha1('Shakh'.$card->card->id.$card->card->exp_date.time());
@@ -101,7 +104,7 @@ class CardsController extends \yii\web\Controller
                         'action' => 'getmaincard',
                         'status' => true,
                         'content' => [
-                            'id' => $card->card->id,
+                            'id' => $card->id,
                             'bank_id' => $card->card->bank_id,
                             'bank_name' => $card->card->bank->name,
                             'cnumb' => $card->card->number,
@@ -114,6 +117,7 @@ class CardsController extends \yii\web\Controller
                     ];
                 }
                 else {
+
                     if (count($user->cards) > 0){
                         $card = UserCards::find()->where(['user_id' => $user->id, 'status' => 1])->one();
 
@@ -180,7 +184,7 @@ class CardsController extends \yii\web\Controller
                     //$card->public_key = sha1('Shakh'.$card->card_id.$card->card->exp_date.time());
                     //$card->save();
                     $a[$i] = [
-                        'id' => $card->card->id,
+                        'id' => $card->id,
                         'bank_id' => $card->card->bank_id,
                         'bank_name' => $card->card->bank->name,
                         'cnumb' => $card->card->number,
@@ -445,27 +449,68 @@ class CardsController extends \yii\web\Controller
         if ($user){
             $card = Cards::findOne(['number' => $card_number, 'exp_date' => $exp_date, 'status' => 1]);
             if ($card){
-                $rand_num = rand(1000, 9999);
-                $user_card = new UserCards();
-                $user_card->user_id = $user->id;
-                $user_card->card_id = $card->id;
-                $user_card->public_key = sha1($user->id.$card->id.time()."Shakh");
-                $user_card->status = 0;
-                $user_card->smstouser = $rand_num;
-                if ($user_card->save()){
-                    return [
-                       'action' => 'add',
-                       'status' => true,
-                       'content' => $rand_num
-                    ];
+
+                $usercard_check = UserCards::findOne(['user_id' => $user->id, 'card_id' => $card->id]);
+                if ($usercard_check){
+                    if ($usercard_check->status == 0){
+                        $rand_num = rand(1000, 9999);
+                        $usercard_check->smstouser = $rand_num;
+                        if ($usercard_check->save()){
+                            $sms = "To: 998".$card->phone."\n\nYour verification code is ".$rand_num;
+                            file_put_contents('/var/spool/sms/outgoing/shakh', $sms);
+
+                            return [
+                                'action' => 'add',
+                                'status' => true,
+                                'content' => $rand_num
+                            ];
+                        }
+                        else {
+                            return [
+                                'action' => 'add',
+                                'status' => false,
+                                'content' => 'Cannot add card. Please, try again later'
+                            ];
+                        }
+                    }
+                    else {
+                        return [
+                            'action' => 'add',
+                            'status' => false,
+                            'content' => 'This card is already in your list'
+                        ];
+                    }
                 }
                 else {
-                    return [
-                       'action' => 'add',
-                       'status' => false,
-                       'content' => 'Cannot add card. Please, try again later'
-                    ];
+                    $rand_num = rand(1000, 9999);
+                    $user_card = new UserCards();
+                    $user_card->user_id = $user->id;
+                    $user_card->card_id = $card->id;
+                    $user_card->public_key = sha1($user->id.$card->id.time()."Shakh");
+                    $user_card->status = 0;
+                    $user_card->smstouser = $rand_num;
+                    if ($user_card->save()){
+
+                        // send sms code here
+                        $sms = "To: 998".$card->phone."\n\nYour verification code is ".$rand_num;
+                        file_put_contents('/var/spool/sms/outgoing/shakh', $sms);
+
+                        return [
+                            'action' => 'add',
+                            'status' => true,
+                            'content' => $rand_num
+                        ];
+                    }
+                    else {
+                        return [
+                            'action' => 'add',
+                            'status' => false,
+                            'content' => 'Cannot add card. Please, try again later'
+                        ];
+                    }
                 }
+
+
 
             }
             else {
