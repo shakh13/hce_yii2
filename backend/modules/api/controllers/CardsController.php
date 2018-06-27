@@ -75,7 +75,7 @@ class CardsController extends \yii\web\Controller
                 return [
                     'action' => 'setmaincard',
                     'status' => false,
-                    'content' => 'Couldn\'t find '.($user && !$card ? 'card' : ($card && !$user ? 'user' : 'user and card'))
+                    'content' => 'Couldn\'t find '.($user && !$usercard ? 'card' : ($card && !$user ? 'user' : 'user and card'))
                 ];
             }
         }
